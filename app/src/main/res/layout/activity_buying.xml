@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7f9"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+
+                android:background="@color/white"
+                android:elevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="80dp"
+                            android:onClick="back"
+                            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:gravity="center"
+                            android:text="Buying"
+                            android:textSize="50dp"
+                            android:textStyle="bold" />
+
+                        <HorizontalScrollView
+                            android:layout_row="1"
+                            android:layout_column="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:backgroundTint="@color/purple"
+                                    app:cardCornerRadius="25dp">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:height="2dp"
+                                        android:background="@color/purple"
+                                        android:gravity="center"
+                                        android:text="Featured Items"
+                                        android:textColor="@color/white" />
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:backgroundTint="@color/white"
+                                    android:hapticFeedbackEnabled="false"
+                                    app:cardBackgroundColor="#CD2626"
+                                    app:cardCornerRadius="25dp">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:height="2dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:text="Most Recent"
+                                        android:textColor="@color/purple" />
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:backgroundTint="@color/white"
+                                    app:cardCornerRadius="25dp">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:height="2dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:text="Other Items"
+                                        android:textColor="@color/purple" />
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:backgroundTint="@color/white"
+                                    app:cardCornerRadius="25dp">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:height="2dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:text="Featured Items"
+                                        android:textColor="@color/purple" />
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:backgroundTint="@color/white"
+                                    app:cardCornerRadius="25dp">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:height="2dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:text="Featured Items"
+                                        android:textColor="@color/purple" />
+                                </com.google.android.material.card.MaterialCardView>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </GridLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+
+                        android:layout_column="0"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:drawable="@drawable/sel_1"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/sel_1"
+                            android:state_focused="true"
+                            android:state_pressed="false" />
+
+                        <GridLayout
+                            android:layout_row="0"
+                            android:layout_column="1">
+
+                            <TextView
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:text="Nikon 600D Mirorless"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:text="$344.99"
+                                android:textColor="@color/purple"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:text="+201 Recomendation"
+                                android:textSize="10dp"
+
+                                />
+
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+
+                        android:layout_column="0"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:drawable="@drawable/sel_2"
+                            android:src="@drawable/sel_2"
+                            android:layout_marginRight="8dp"
+                            android:state_focused="true"
+                            android:state_pressed="false" />
+
+                        <GridLayout
+                            android:layout_row="0"
+                            android:layout_column="1">
+
+                            <TextView
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:text="WJPILIS Smart Wrist Watch"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:text="$199.99"
+                                android:textColor="@color/purple"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:text="+184 Recomendation"
+                                android:textSize="10dp"
+
+                                />
+
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+
+                        android:layout_column="0"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:drawable="@drawable/sel_3"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/sel_3"
+                            android:state_focused="true"
+                            android:state_pressed="false" />
+
+                        <GridLayout
+                            android:layout_row="0"
+                            android:layout_column="1">
+
+                            <TextView
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:text="Echo Dot Kids Edition"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:text="$299.99"
+                                android:textColor="@color/purple"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:text="+410 Recomendation"
+                                android:textSize="10dp"
+
+                                />
+
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+
+                        android:layout_column="0"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="8dp"
+                            android:drawable="@drawable/sel_4"
+                            android:src="@drawable/sel_4"
+                            android:state_focused="true"
+                            android:state_pressed="false" />
+
+                        <GridLayout
+                            android:layout_row="0"
+                            android:layout_column="1">
+
+                            <TextView
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:text="Amazon Echo Look"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:text="$349.49"
+                                android:textColor="@color/purple"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:text="+474 Recomendation"
+                                android:textSize="10dp"
+
+                                />
+
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+
+                        android:layout_column="0"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="8dp"
+                            android:drawable="@drawable/sel_5"
+                            android:src="@drawable/sel_5"
+                            android:state_focused="true"
+                            android:state_pressed="false" />
+
+                        <GridLayout
+                            android:layout_row="0"
+                            android:layout_column="1">
+
+                            <TextView
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:text="Nikon 600D Mirorless"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:text="$344.99"
+                                android:textColor="@color/purple"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:text="+201 Recomendation"
+                                android:textSize="10dp"
+
+                                />
+
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+
+                        android:layout_column="0"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:drawable="@drawable/sel_2"
+                            android:src="@drawable/sel_2"
+                            android:layout_marginRight="8dp"
+                            android:state_focused="true"
+                            android:state_pressed="false" />
+
+                        <GridLayout
+                            android:layout_row="0"
+                            android:layout_column="1">
+
+                            <TextView
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:text="Nikon 600D Mirorless"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:text="$344.99"
+                                android:textColor="@color/purple"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:text="+201 Recomendation"
+                                android:textSize="10dp"
+
+                                />
+
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:layout_marginBottom="50dp"
+
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+
+                        android:layout_column="0"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:drawable="@drawable/sel_3"
+                            android:src="@drawable/sel_3"
+                            android:layout_marginRight="8dp"
+                            android:state_focused="true"
+                            android:state_pressed="false" />
+
+                        <GridLayout
+                            android:layout_row="0"
+                            android:layout_column="1">
+
+                            <TextView
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:text="Nikon 600D Mirorless"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:text="$344.99"
+                                android:textColor="@color/purple"
+                                android:textSize="20dp"
+
+                                />
+
+                            <TextView
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:text="+201 Recomendation"
+                                android:textSize="10dp"
+
+                                />
+
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:windowBackground"
+        app:menu="@menu/bottom_navigation" />
+</RelativeLayout>
+
